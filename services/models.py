@@ -1,10 +1,12 @@
 from django.db import models
 from core.mixins import SeoMixin
 from ckeditor.fields import RichTextField
-
+from django.utils.text import slugify
+from django.urls import reverse
 # Create your models here.
 
 class Service(SeoMixin, models.Model):
+    slug = models.SlugField(unique=True,blank=True)
     cover_title = models.CharField(max_length=100)
     cover_image = models.ImageField(upload_to='services/covers/', null=True, blank=True)
     image1 = models.ImageField(upload_to='services/images/', null=True, blank=True)
@@ -23,6 +25,13 @@ class Service(SeoMixin, models.Model):
         return self.cover_title
     class Meta:
         verbose_name_plural = 'Xidmətlər'
+
+    def get_absolute_url(self):
+        return reverse('service_detail', kwargs={'slug': self.slug})
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.cover_title)
+        super(Service, self).save(*args, **kwargs)
 
 class ServicesIndex(SeoMixin, models.Model):
     def __str__(self):

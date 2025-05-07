@@ -4,6 +4,6 @@ from services.views import  services,service_detail
 
 urlpatterns = [
     path('', services, name='services'),
-    path('services-details/', service_detail, name='service-details'),
+    path('<slug:slug>', service_detail, name='service_detail'),
 
 ]

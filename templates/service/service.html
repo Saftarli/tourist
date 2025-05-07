@@ -2,7 +2,7 @@
 {% load static %}
 {% block body %}
 
-    <div class="breadcumb-wrapper " data-bg-src="img/bg/breadcumb-bg.jpg">
+    <div class="breadcumb-wrapper " data-bg-src="{% static 'img/bg/breadcumb-bg.jpg' %}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Xidmətlər</h1>
@@ -19,109 +19,21 @@ Destination Area
     <section class="position-relative overflow-hidden space" id="destination-sec">
         <div class="container">
             <div class="row gy-4 gx-4">
+                {% for service in services %}
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="destination-item th-ani">
                         <div class="destination-item_img global-img">
-                            <img src="{% static 'img/destination/destination_4_1.jpg' %}" alt="image">
+                            <img src="{{ service.cover_image.url }}" alt="image">
                         </div>
                         <div class="destination-content">
-                            <h3 class="box-title"><a href="service-details.html">Photo Shoot</a></h3>
-                            <p class="destination-text">20 Listing</p>
-                            <a href="contact.html" class="th-btn style4 th-icon">Ətraflı</a>
+                            <h3 class="box-title"><a href="{{ service.get_absolute_url }}">{{ service.cover_title }}</a></h3>
+                            <br>
+                            <a href="{{ service.get_absolute_url }}" class="th-btn style4 th-icon">Ətraflı</a>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
 
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="destination-item th-ani">
-                        <div class="destination-item_img global-img">
-                            <img src="{% static 'img/destination/destination_4_2.jpg' %}" alt="image">
-                        </div>
-                        <div class="destination-content">
-                            <h3 class="box-title"><a href="service-details.html">Tour Guide</a></h3>
-                            <p class="destination-text">22 Listing</p>
-                            <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="destination-item th-ani">
-                        <div class="destination-item_img global-img">
-                            <img src="{% static 'img/destination/destination_4_3.jpg' %}" alt="image">
-                        </div>
-                        <div class="destination-content">
-                            <h3 class="box-title"><a href="service-details.html">Cozy Event</a></h3>
-                            <p class="destination-text">23 Listing</p>
-                            <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="destination-item th-ani">
-                        <div class="destination-item_img global-img">
-                            <img src="{% static 'img/destination/destination_4_4.jpg' %}" alt="image">
-                        </div>
-                        <div class="destination-content">
-                            <h3 class="box-title"><a href="service-details.html">Interesting Rest</a></h3>
-                            <p class="destination-text">24 Listing</p>
-                            <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="destination-item th-ani">
-                        <div class="destination-item_img global-img">
-                            <img src="{% static 'img/destination/destination_4_5.jpg' %}" alt="image">
-                        </div>
-                        <div class="destination-content">
-                            <h3 class="box-title"><a href="service-details.html">Kayaking</a></h3>
-                            <p class="destination-text">25 Listing</p>
-                            <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="destination-item th-ani">
-                        <div class="destination-item_img global-img">
-                            <img src="{% static 'img/destination/destination_4_6.jpg' %}" alt="image">
-                        </div>
-                        <div class="destination-content">
-                            <h3 class="box-title"><a href="service-details.html">Safe Flight</a></h3>
-                            <p class="destination-text">26 Listing</p>
-                            <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="destination-item th-ani">
-                        <div class="destination-item_img global-img">
-                            <img src="{% static 'img/destination/destination_4_7.jpg' %}" alt="image">
-                        </div>
-                        <div class="destination-content">
-                            <h3 class="box-title"><a href="service-details.html">Entertainment</a></h3>
-                            <p class="destination-text">27 Listing</p>
-                            <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="destination-item th-ani">
-                        <div class="destination-item_img global-img">
-                            <img src="{% static 'img/destination/destination_4_8.jpg' %}" alt="image">
-                        </div>
-                        <div class="destination-content">
-                            <h3 class="box-title"><a href="service-details.html">Delicisious Food</a></h3>
-                            <p class="destination-text">28 Listing</p>
-                            <a href="contact.html" class="th-btn style4 th-icon">Book Now</a>
-                        </div>
-                    </div>
-                </div>
 
             </div>
             <div class="shape-mockup shape1 d-none d-xxl-block" data-bottom="17%" data-right="-9%">
