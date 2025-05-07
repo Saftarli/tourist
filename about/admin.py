@@ -1,5 +1,5 @@
 from django.contrib import admin
-from about.models import About, AboutIndexPage
+from about.models import About
 # Register your models here.
 class SingleInstanceAdmin(admin.ModelAdmin):
     def has_add_permission(self, request):
@@ -10,4 +10,4 @@ class SingleInstanceAdmin(admin.ModelAdmin):
 class AboutAdmin(SingleInstanceAdmin):
     pass
 admin.site.register(About,SingleInstanceAdmin)
-admin.site.register(AboutIndexPage)
+

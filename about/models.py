@@ -2,7 +2,7 @@ from django.db import models
 from core.mixins import SeoMixin
 
 # Create your models here.
-class About(SeoMixin, models.Model):
+class About(SeoMixin):
     image1 = models.ImageField(upload_to='about/images/', null=True, blank=True)
     image2 = models.ImageField(upload_to='about/images/', null=True, blank=True)
     image3 = models.ImageField(upload_to='about/images/', null=True, blank=True)
@@ -20,10 +20,3 @@ class About(SeoMixin, models.Model):
 
     class Meta:
         verbose_name_plural = 'Haqqımızda'
-
-
-class AboutIndexPage(SeoMixin, models.Model):
-    def __str__(self):
-        return 'Haqqımızda Seo'
-    class Meta:
-        verbose_name_plural = 'Haqqımızda Seo'
