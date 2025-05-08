@@ -8,18 +8,18 @@ from django.urls import reverse
 class Service(SeoMixin, models.Model):
     slug = models.SlugField(unique=True,blank=True)
     cover_title = models.CharField(max_length=100)
-    cover_image = models.ImageField(upload_to='services/covers/', null=True, blank=True)
-    image1 = models.ImageField(upload_to='services/images/', null=True, blank=True)
-    image2 = models.ImageField(upload_to='services/images/', null=True, blank=True)
+    cover_image = models.ImageField(upload_to='services/covers/', null=True, blank=True, help_text='312x274 ölçüdə olacaq şəkil')
+    image1 = models.ImageField(upload_to='services/images/', null=True, blank=True, help_text='872x536 ölçüdə olacaq şəkil')
+    image2 = models.ImageField(upload_to='services/images/', null=True, blank=True,help_text='872x400 ölçüdə olacaq şəkil')
     title = models.CharField(max_length=100, null=True, blank=True)
     content = models.TextField(null=True, blank=True)
-    subtitle = models.TextField(null=True, blank=True)
+    subtitle = models.CharField(null=True, blank=True,max_length=100)
     subcontent = RichTextField(null=True, blank=True)
     gallery_title = models.CharField(max_length=100, null=True, blank=True)
-    gallery_image = models.ImageField(upload_to='services/gallery/', null=True, blank=True)
-    gallery_image1 = models.ImageField(upload_to='services/gallery/', null=True, blank=True)
-    gallery_image2 = models.ImageField(upload_to='services/gallery/', null=True, blank=True)
-    gallery_image4 = models.ImageField(upload_to='services/gallery/', null=True, blank=True)
+    gallery_image = models.ImageField(upload_to='services/gallery/', null=True, blank=True,help_text='312x215 ölçüdə olacaq şəkil')
+    gallery_image1 = models.ImageField(upload_to='services/gallery/', null=True, blank=True,help_text='536x215 ölçüdə olacaq şəkil')
+    gallery_image2 = models.ImageField(upload_to='services/gallery/', null=True, blank=True,help_text='536x215 ölçüdə olacaq şəkil')
+    gallery_image4 = models.ImageField(upload_to='services/gallery/', null=True, blank=True, help_text='312x215 ölçüdə olacaq şəkil')
 
     def __str__(self):
         return self.cover_title
