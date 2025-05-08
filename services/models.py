@@ -33,7 +33,7 @@ class Service(SeoMixin, models.Model):
         self.slug = slugify(self.cover_title)
         super(Service, self).save(*args, **kwargs)
 
-class ServicesIndex(SeoMixin, models.Model):
+class ServicesIndex(SeoMixin):
     def __str__(self):
         return 'Xidmətlər'
 
