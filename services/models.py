@@ -7,7 +7,7 @@ from django.urls import reverse
 
 class Service(SeoMixin, models.Model):
     slug = models.SlugField(unique=True,blank=True)
-    cover_title = models.CharField(max_length=100)
+    cover_title = models.CharField(max_length=100, help_text='Xidmətlər səhifəsində olan xidmətin adı olacaq burda')
     cover_image = models.ImageField(upload_to='services/covers/', null=True, blank=True, help_text='312x274 ölçüdə olacaq şəkil')
     image1 = models.ImageField(upload_to='services/images/', null=True, blank=True, help_text='872x536 ölçüdə olacaq şəkil')
     image2 = models.ImageField(upload_to='services/images/', null=True, blank=True,help_text='872x400 ölçüdə olacaq şəkil')
