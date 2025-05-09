@@ -7,10 +7,10 @@
     <div class="breadcumb-wrapper " data-bg-src="img/bg/breadcumb-bg.jpg">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Contact Us</h1>
+                <h1 class="breadcumb-title">Bizimlə Əlaqə</h1>
                 <ul class="breadcumb-menu">
-                    <li><a href="home-travel.html">Home</a></li>
-                    <li>Contact Us</li>
+                    <li><a href="{% url 'home' %}">Ana Səhifə</a></li>
+                    <li>Bizimlə Əlaqə</li>
                 </ul>
             </div>
         </div>
@@ -20,8 +20,8 @@ Contact Area
     <div class="space">
         <div class="container">
             <div class="title-area text-center">
-                <span class="sub-title">Get In Touch</span>
-                <h2 class="sec-title">Our Contact Information</h2>
+                <span class="sub-title">Biz buradayıq – yazın! </span>
+                <h2 class="sec-title">Əlaqə Məlumatlarımız</h2>
             </div>
             <div class="row gy-4 justify-content-center">
                 <div class="col-xl-4 col-lg-6">
@@ -30,9 +30,9 @@ Contact Area
                             <img src="{% static 'img/icon/location-dot2.svg' %}" alt="">
                         </div>
                         <div class="about-contact-details">
-                            <h6 class="box-title">Our Address</h6>
-                            <p class="about-contact-details-text">2690 Hiltona Street Victoria</p>
-                            <p class="about-contact-details-text">Road, New York, Canada</p>
+                            <h6 class="box-title">Ünvan</h6>
+                            <p class="about-contact-details-text">{{ site_settings.address }}</p>
+
                         </div>
                     </div>
                 </div>
@@ -42,9 +42,8 @@ Contact Area
                             <img src="{% static 'img/icon/call.svg' %}" alt="">
                         </div>
                         <div class="about-contact-details">
-                            <h6 class="box-title">Phone Number</h6>
-                            <p class="about-contact-details-text"><a href="tel:01234567890">+01 234 567 890</a></p>
-                            <p class="about-contact-details-text"><a href="tel:01234567890">+09 876 543 210</a></p>
+                            <h6 class="box-title">Telefon</h6>
+                            <p class="about-contact-details-text"><a href="tel:01234567890">{{ site_settings.phone_number }}</a></p>
                         </div>
                     </div>
                 </div>
@@ -54,9 +53,8 @@ Contact Area
                             <img src="{% static 'img/icon/mail.svg' %}" alt="">
                         </div>
                         <div class="about-contact-details">
-                            <h6 class="box-title">Email Address</h6>
-                            <p class="about-contact-details-text"><a href="mailto:mailinfo00@tourm.com">mailinfo00@tourm.com</a></p>
-                            <p class="about-contact-details-text"><a href="mailto:support24@tourm.com">support24@tourm.com</a></p>
+                            <h6 class="box-title">Email</h6>
+                            <p class="about-contact-details-text"><a href="mailto:mailinfo00@tourm.com">{{ site_settings.email }}</a></p>
                         </div>
                     </div>
                 </div>
