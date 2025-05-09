@@ -1,6 +1,6 @@
+{% load static %}
 <!doctype html>
 <html class="no-js" lang="zxx">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,48 +14,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/favicons/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/favicons/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/favicons/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/favicons/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/favicons/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/favicons/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/favicons/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'img/favicons/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicons/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'img/favicons/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'img/favicons/favicon-96x96.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicons/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'img/favicons/manifest.json' %}">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <!--==============================
 	  Google Fonts
 	============================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montez&display=swap" rel="stylesheet">
+    <link  rel="preconnect" href="https://fonts.googleapis.com">
+    <link  rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link  rel="preconnect" href="https://fonts.googleapis.com">
+    <link  rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link  href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montez&display=swap" rel="stylesheet">
 
     <!--==============================
 	    All CSS File
 	============================== -->
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <!-- Fontawesome Icon -->
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.min.css' %}">
 
     <!-- Swiper css -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
 
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 
@@ -67,7 +67,7 @@
 
 
     <!--********************************
-   		Code Start From Here 
+   		Code Start From Here
 	******************************** -->
 
     <div class="cursor-follower"></div>
@@ -83,7 +83,7 @@
     <div id="preloader" class="preloader ">
         <button class="th-btn preloaderCls">Cancel Preloader </button>
         <div class="preloader-inner">
-            <img src="assets/img/logo3.svg" alt="">
+            <img src="{% static 'img/logo3.svg' %}" alt="">
         </div>
 
         <div id="loader" class="th-preloader">
@@ -111,7 +111,7 @@
             <div class="widget  ">
                 <div class="th-widget-about">
                     <div class="about-logo">
-                        <a href="home-travel.html"><img src="assets/img/logo2.svg" alt="Tourm"></a>
+                        <a href="home-travel.html"><img src="{% static 'img/logo2.svg' %}" alt="Tourm"></a>
                     </div>
                     <p class="about-text">Rapidiously myocardinate cross-platform intellectual capital model. Appropriately create interactive infrastructures</p>
                     <div class="th-social">
@@ -127,7 +127,7 @@
                 <div class="recent-post-wrap">
                     <div class="recent-post">
                         <div class="media-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
+                            <a href="blog-details.html"><img src="{% static 'img/blog/recent-post-1-1.jpg' %}" alt="Blog Image"></a>
                         </div>
                         <div class="media-body">
                             <div class="recent-post-meta">
@@ -139,7 +139,7 @@
                     </div>
                     <div class="recent-post">
                         <div class="media-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
+                            <a href="blog-details.html"><img src="{% static 'img/blog/recent-post-1-2.jpg' %}" alt="Blog Image"></a>
                         </div>
                         <div class="media-body">
                             <div class="recent-post-meta">
@@ -155,7 +155,7 @@
                 <div class="th-widget-contact">
                     <div class="info-box_text">
                         <div class="icon">
-                            <img src="assets/img/icon/phone.svg" alt="img">
+                            <img src="{% static 'img/icon/phone.svg' %}" alt="img">
                         </div>
                         <div class="details">
                             <p><a href="tel:+01234567890" class="info-box_link">+01 234 567 890</a></p>
@@ -164,7 +164,7 @@
                     </div>
                     <div class="info-box_text">
                         <div class="icon">
-                            <img src="assets/img/icon/envelope.svg" alt="img">
+                            <img src="{% static 'img/icon/envelope.svg' %}" alt="img">
                         </div>
                         <div class="details">
                             <p><a href="mailto:mailinfo00@tourm.com" class="info-box_link">mailinfo00@tourm.com</a></p>
@@ -172,7 +172,7 @@
                         </div>
                     </div>
                     <div class="info-box_text">
-                        <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img"></div>
+                        <div class="icon"><img src="{% static 'img/icon/location-dot.svg' %}" alt="img"></div>
                         <div class="details">
                             <p>789 Inner Lane, Holy park, California, USA</p>
                         </div>
@@ -194,7 +194,7 @@
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="home-travel.html"><img src="assets/img/logo2.svg" alt="Tourm"></a>
+                <a href="home-travel.html"><img src="{% static 'img/logo2.svg' %}" alt="Tourm"></a>
             </div>
             <div class="th-mobile-menu">
                 <ul>
@@ -275,7 +275,7 @@
                 </ul>
             </div>
         </div>
-    </div> <!--============================== 
+    </div> <!--==============================
 	Header Area
 ==============================-->
     <header class="th-header header-layout3 header-layout15 header-absolute">
@@ -302,7 +302,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-travel.jpg" alt="Home One">
+                                                                        <img src="{% static 'img/pages/home-travel.jpg' %}" alt="Home One">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="index.html" class="th-btn">View Demo</a>
                                                                         </div>
@@ -313,7 +313,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-tour.jpg" alt="Home Two">
+                                                                        <img src="{% static 'img/pages/home-tour.jpg' %}" alt="Home Two">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-tour.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -324,7 +324,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-agency.jpg" alt="Home Three">
+                                                                        <img src="{% static 'img/pages/home-agency.jpg' %}" alt="Home Three">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-agency.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -336,7 +336,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-yacht.jpg" alt="Home Four">
+                                                                        <img src="{% static 'img/pages/home-yacht.jpg' %}" alt="Home Four">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-yacht.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -348,7 +348,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-beach.jpg" alt="Home Five">
+                                                                        <img src="{% static 'img/pages/home-beach.jpg' %}" alt="Home Five">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-beach.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -360,7 +360,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-resort.jpg" alt="Home Six">
+                                                                        <img src="{% static 'img/pages/home-resort.jpg' %}" alt="Home Six">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-resort.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -372,7 +372,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-countryside-hotel.jpg" alt="Home Six">
+                                                                        <img src="{% static 'img/pages/home-countryside-hotel.jpg' %}" alt="Home Six">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-countryside-hotel.html" class="th-btn ">View
                                                                                 Demo</a>
@@ -385,7 +385,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-forest.jpg" alt="Home Six">
+                                                                        <img src="{% static 'img/pages/home-forest.jpg' %}" alt="Home Six">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-forest.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -397,7 +397,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-hiking.jpg" alt="Home Six">
+                                                                        <img src="{% static 'img/pages/home-hiking.jpg' %}" alt="Home Six">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-hiking.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -409,7 +409,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-hiking-2.jpg" alt="Home ten">
+                                                                        <img src="{% static 'img/pages/home-hiking-2.jpg' %}" alt="Home ten">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-hiking-2.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -422,7 +422,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-cruise-tour.jpg" alt="Home ten">
+                                                                        <img src="{% static 'img/pages/home-cruise-tour.jpg' %}" alt="Home ten">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-cruise-tour.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -435,7 +435,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-travel-agency.jpg" alt="Home ten">
+                                                                        <img src="{% static 'img/pages/home-travel-agency.jpg' %}" alt="Home ten">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-travel-agency.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -448,7 +448,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-museum-tour.jpg" alt="Home ten">
+                                                                        <img src="{% static 'img/pages/home-museum-tour.jpg' %}" alt="Home ten">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-museum-tour.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -461,7 +461,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-worldwide-tour.jpg" alt="Home ten">
+                                                                        <img src="{% static 'img/pages/home-worldwide-tour.jpg' %}" alt="Home ten">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-worldwide-tour.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -474,7 +474,7 @@
                                                             <div class="col-lg-3">
                                                                 <div class="mega-menu-box">
                                                                     <div class="mega-menu-img">
-                                                                        <img src="assets/img/pages/home-city-tour.jpg" alt="Home ten">
+                                                                        <img src="{% static 'img/pages/home-city-tour.jpg' %}" alt="Home ten">
                                                                         <div class="btn-wrap">
                                                                             <a target="_blank" href="home-city-tour.html" class="th-btn ">View Demo</a>
                                                                         </div>
@@ -511,7 +511,7 @@
                         <div class="col-auto">
                             <div class="header-logo">
                                 <a href="index.html">
-                                    <img src="assets/img/logo-white2.svg" alt="Tourm">
+                                    <img src="{% static 'img/logo-white2.svg' %}" alt="Tourm">
                                 </a>
                             </div>
                         </div>
@@ -568,7 +568,7 @@
                                 </nav>
                                 <div class="header-button">
                                     <a href="contact.html" class="th-btn style2 th-icon">Book Now</a>
-                                    <a href="#" class="simple-btn sideMenuToggler"><img src="assets/img/icon/menu.svg" alt=""></a>
+                                    <a href="#" class="simple-btn sideMenuToggler"><img src="{% static 'img/icon/menu.svg' %}" alt=""></a>
 
                                 </div>
                                 <button type="button" class="th-menu-toggle d-block d-xl-none"><i class="far fa-bars"></i></button>
@@ -589,7 +589,7 @@ Hero Area
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_1_1.jpg">
+                        <div class="th-hero-bg" data-bg-src="img/hero/hero_1_1.jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style11">
@@ -605,7 +605,7 @@ Hero Area
                 </div>
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_1_2.jpg">
+                        <div class="th-hero-bg" data-bg-src="img/hero/hero_1_2.jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style11">
@@ -622,7 +622,7 @@ Hero Area
                 </div>
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/hero_1_3jpg">
+                        <div class="th-hero-bg" data-bg-src="img/hero/hero_1_3jpg">
                         </div>
                         <div class="container">
                             <div class="hero-style11">
@@ -704,7 +704,7 @@ Hero Area
                                 </div>
                             </div>
                             <div class="form-btn col-sm-6 col-lg-auto">
-                                <button class="th-btn"><img src="assets/img/icon/search.svg" alt="">Search</button>
+                                <button class="th-btn"><img src="{% static 'img/icon/search.svg' %}" alt="">Search</button>
                             </div>
                         </div>
                         <p class="form-messages mb-0 mt-3"></p>
@@ -712,11 +712,11 @@ Hero Area
                 </div>
             </div>
         </div>
-        <button data-slider-prev="#heroSlide11" class="slider-arrow slider-prev"><img src="assets/img/icon/right-arrow2.svg" alt=""></button>
-        <button data-slider-next="#heroSlide11" class="slider-arrow slider-next"><img src="assets/img/icon/left-arrow2.svg" alt=""></button>
+        <button data-slider-prev="#heroSlide11" class="slider-arrow slider-prev"><img src="{% static 'img/icon/right-arrow2.svg' %}" alt=""></button>
+        <button data-slider-next="#heroSlide11" class="slider-arrow slider-next"><img src="{% static 'img/icon/left-arrow2.svg' %}" alt=""></button>
     </div>
     <!--======== / Hero Section ========--><!--==============================
-About Area  
+About Area
 ==============================-->
     <div class="about-area position-relative overflow-hidden space-extra-top space-bottom" id="about-sec">
         <div class="container">
@@ -724,16 +724,16 @@ About Area
                 <div class="col-xl-6">
                     <div class="img-box12">
                         <div class="img1 global-img">
-                            <img src="assets/img/normal/about_10_1.jpg" alt="About">
+                            <img src="{% static 'img/normal/about_10_1.jpg' %}" alt="About">
                         </div>
                         <div class="img2">
-                            <img src="assets/img/normal/about_10_2.jpg" alt="About">
+                            <img src="{% static 'img/normal/about_10_2.jpg' %}" alt="About">
                         </div>
                         <div class="img3 global-img">
-                            <img src="assets/img/normal/about_10_3.jpg" alt="About">
+                            <img src="{% static 'img/normal/about_10_3.jpg' %}" alt="About">
                         </div>
                         <div class="about-wrapp">
-                            <div class="icon"><img src="assets/img/logo-icon.svg" alt=""></div>
+                            <div class="icon"><img src="{% static 'img/logo-icon.svg' %}" alt=""></div>
                             <div class="discount-wrapp">
                                 <div class="discount-tag">
                                     <span class="discount-anime">More about us our tourm * </span>
@@ -757,14 +757,14 @@ About Area
                         </div>
                         <div class="about-item-wrap style2">
                             <div class="about-item style2">
-                                <div class="about-item_img"><img src="assets/img/icon/map4.svg" alt=""></div>
+                                <div class="about-item_img"><img src="{% static 'img/icon/map4.svg' %}" alt=""></div>
                                 <div class="about-item_centent">
                                     <h5 class="box-title">Exclusive Trip</h5>
                                     <p class="about-item_text">There are many variations of passages of available but the majority.</p>
                                 </div>
                             </div>
                             <div class="about-item style2">
-                                <div class="about-item_img"><img src="assets/img/icon/baloon.svg" alt=""></div>
+                                <div class="about-item_img"><img src="{% static 'img/icon/baloon.svg' %}" alt=""></div>
                                 <div class="about-item_centent">
                                     <h5 class="box-title">Safety First</h5>
                                     <p class="about-item_text">There are many variations of passages of available but the majority.</p>
@@ -777,7 +777,7 @@ About Area
             </div>
         </div>
     </div><!--==============================
-Destination Area  
+Destination Area
 ==============================-->
 
     <section class="destination-area10 position-relative overflow-hidden space" id="destination-sec">
@@ -792,10 +792,10 @@ Destination Area
                         <div class="swiper-slide">
                             <div class="destination-item4 style2 th-ani">
                                 <div class="destination-item4_img global-img">
-                                    <img src="assets/img/destination/destination_10_1.jpg" alt="image">
+                                    <img src="{% static 'img/destination/destination_10_1.jpg' %}" alt="image">
                                 </div>
                                 <div class="destination-content">
-                                    <h3 class="box-title"><a href="destination-details.html"><img src="assets/img/icon/location-dot4.svg" alt="">Indonesia</a></h3>
+                                    <h3 class="box-title"><a href="destination-details.html"><img src="{% static 'img/icon/location-dot4.svg' %}" alt="">Indonesia</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -803,10 +803,10 @@ Destination Area
                         <div class="swiper-slide">
                             <div class="destination-item4 style2 th-ani">
                                 <div class="destination-item4_img global-img">
-                                    <img src="assets/img/destination/destination_10_2.jpg" alt="image">
+                                    <img src="{% static 'img/destination/destination_10_2.jpg' %}" alt="image">
                                 </div>
                                 <div class="destination-content">
-                                    <h3 class="box-title"><a href="destination-details.html"><img src="assets/img/icon/location-dot4.svg" alt="">Barcelona</a></h3>
+                                    <h3 class="box-title"><a href="destination-details.html"><img src="{% static 'img/icon/location-dot4.svg' %}" alt="">Barcelona</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -814,10 +814,10 @@ Destination Area
                         <div class="swiper-slide">
                             <div class="destination-item4 style2 th-ani">
                                 <div class="destination-item4_img global-img">
-                                    <img src="assets/img/destination/destination_10_3.jpg" alt="image">
+                                    <img src="{% static 'img/destination/destination_10_3.jpg' %}" alt="image">
                                 </div>
                                 <div class="destination-content">
-                                    <h3 class="box-title"><a href="destination-details.html"><img src="assets/img/icon/location-dot4.svg" alt="">Maldives</a></h3>
+                                    <h3 class="box-title"><a href="destination-details.html"><img src="{% static 'img/icon/location-dot4.svg' %}" alt="">Maldives</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -825,10 +825,10 @@ Destination Area
                         <div class="swiper-slide">
                             <div class="destination-item4 style2 th-ani">
                                 <div class="destination-item4_img global-img">
-                                    <img src="assets/img/destination/destination_10_4.jpg" alt="image">
+                                    <img src="{% static 'img/destination/destination_10_4.jpg' %}" alt="image">
                                 </div>
                                 <div class="destination-content">
-                                    <h3 class="box-title"><a href="destination-details.html"><img src="assets/img/icon/location-dot4.svg" alt="">Thailand</a></h3>
+                                    <h3 class="box-title"><a href="destination-details.html"><img src="{% static 'img/icon/location-dot4.svg' %}" alt="">Thailand</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -836,10 +836,10 @@ Destination Area
                         <div class="swiper-slide">
                             <div class="destination-item4 style2 th-ani">
                                 <div class="destination-item4_img global-img">
-                                    <img src="assets/img/destination/destination_10_1.jpg" alt="image">
+                                    <img src="{% static 'img/destination/destination_10_1.jpg' %}" alt="image">
                                 </div>
                                 <div class="destination-content">
-                                    <h3 class="box-title"><a href="destination-details.html"><img src="assets/img/icon/location-dot4.svg" alt="">China</a></h3>
+                                    <h3 class="box-title"><a href="destination-details.html"><img src="{% static 'img/icon/location-dot4.svg' %}" alt="">China</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -847,10 +847,10 @@ Destination Area
                         <div class="swiper-slide">
                             <div class="destination-item4 style2 th-ani">
                                 <div class="destination-item4_img global-img">
-                                    <img src="assets/img/destination/destination_10_2.jpg" alt="image">
+                                    <img src="{% static 'img/destination/destination_10_2.jpg' %}" alt="image">
                                 </div>
                                 <div class="destination-content">
-                                    <h3 class="box-title"><a href="destination-details.html"><img src="assets/img/icon/location-dot4.svg" alt="">Barcelona</a></h3>
+                                    <h3 class="box-title"><a href="destination-details.html"><img src="{% static 'img/icon/location-dot4.svg' %}" alt="">Barcelona</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -858,26 +858,26 @@ Destination Area
                     </div>
                 </div>
                 <div class="icon-box text-center mt-30">
-                    <button data-slider-prev="#destinationSlider10" class="slider-arrow default"><img src="assets/img/icon/right-arrow2.svg" alt=""></button>
-                    <button data-slider-next="#destinationSlider10" class="slider-arrow default"><img src="assets/img/icon/left-arrow2.svg" alt=""></button>
+                    <button data-slider-prev="#destinationSlider10" class="slider-arrow default"><img src="{% static 'img/icon/right-arrow2.svg' %}" alt=""></button>
+                    <button data-slider-next="#destinationSlider10" class="slider-arrow default"><img src="{% static 'img/icon/left-arrow2.svg' %}" alt=""></button>
                 </div>
             </div>
             <div class="shape-mockup movingX d-none d-xl-block" data-top="8%" data-left="-15%">
-                <img src="assets/img/shape/shape_2_1.png" alt="shape">
+                <img src="{% static 'img/shape/shape_2_1.png' %}" alt="shape">
             </div>
             <div class="shape-mockup jump d-none d-xl-block" data-top="23%" data-right="-14%">
-                <img src="assets/img/shape/shape_2_2.png" alt="shape">
+                <img src="{% static 'img/shape/shape_2_2.png' %}" alt="shape">
             </div>
             <div class="shape-mockup spin d-none d-xl-block" data-bottom="21%" data-left="-14%">
-                <img src="assets/img/shape/shape_2_3.png" alt="shape">
+                <img src="{% static 'img/shape/shape_2_3.png' %}" alt="shape">
             </div>
             <div class="shape-mockup movingX d-none d-xl-block" data-bottom="12%" data-right="-14%">
-                <img src="assets/img/shape/shape_2_4.png" alt="shape">
+                <img src="{% static 'img/shape/shape_2_4.png' %}" alt="shape">
             </div>
         </div>
 
     </section><!--==============================
-Service Area  
+Service Area
 ==============================-->
     <section class="tour-area7 position-relative overflow-hidden space" id="">
         <div class="container">
@@ -893,7 +893,7 @@ Service Area
                 <div class="col-lg-6 col-xl-4">
                     <div class="tour-box style5 th-ani gsap-cursor">
                         <div class="tour-box_img global-img">
-                            <img src="assets/img/tour/tour_11_1.jpg" alt="image">
+                            <img src="{% static 'img/tour/tour_11_1.jpg' %}" alt="image">
                             <span class="discount">25% off</span>
                         </div>
                         <div class="tour-content">
@@ -918,7 +918,7 @@ Service Area
                 <div class="col-lg-6 col-xl-4">
                     <div class="tour-box style5 th-ani gsap-cursor">
                         <div class="tour-box_img global-img">
-                            <img src="assets/img/tour/tour_11_2.jpg" alt="image">
+                            <img src="{% static 'img/tour/tour_11_2.jpg' %}" alt="image">
                             <span class="discount">25% off</span>
                         </div>
                         <div class="tour-content">
@@ -943,7 +943,7 @@ Service Area
                 <div class="col-lg-6 col-xl-4">
                     <div class="tour-box style5 th-ani gsap-cursor">
                         <div class="tour-box_img global-img">
-                            <img src="assets/img/tour/tour_11_3.jpg" alt="image">
+                            <img src="{% static 'img/tour/tour_11_3.jpg' %}" alt="image">
                             <span class="discount">25% off</span>
                         </div>
                         <div class="tour-content">
@@ -968,7 +968,7 @@ Service Area
                 <div class="col-lg-6 col-xl-4">
                     <div class="tour-box style5 th-ani gsap-cursor">
                         <div class="tour-box_img global-img">
-                            <img src="assets/img/tour/tour_11_4.jpg" alt="image">
+                            <img src="{% static 'img/tour/tour_11_4.jpg' %}" alt="image">
                             <span class="discount">25% off</span>
                         </div>
                         <div class="tour-content">
@@ -993,7 +993,7 @@ Service Area
                 <div class="col-lg-6 col-xl-4">
                     <div class="tour-box style5 th-ani gsap-cursor">
                         <div class="tour-box_img global-img">
-                            <img src="assets/img/tour/tour_11_5.jpg" alt="image">
+                            <img src="{% static 'img/tour/tour_11_5.jpg' %}" alt="image">
                             <span class="discount">25% off</span>
                         </div>
                         <div class="tour-content">
@@ -1018,7 +1018,7 @@ Service Area
                 <div class="col-lg-6 col-xl-4">
                     <div class="tour-box style5 th-ani gsap-cursor">
                         <div class="tour-box_img global-img">
-                            <img src="assets/img/tour/tour_11_6.jpg" alt="image">
+                            <img src="{% static 'img/tour/tour_11_6.jpg' %}" alt="image">
                             <span class="discount">25% off</span>
                         </div>
                         <div class="tour-content">
@@ -1043,7 +1043,7 @@ Service Area
 
             </div>
             <div class="shape-mockup jump d-none d-xl-block" data-top="3%" data-left="-14%">
-                <img src="assets/img/shape/shape_2_2.png" alt="shape">
+                <img src="{% static 'img/shape/shape_2_2.png' %}" alt="shape">
             </div>
         </div>
     </section>
@@ -1051,16 +1051,16 @@ Service Area
 
 
     <!--==============================
-elements Area  
+elements Area
 ==============================-->
     <div class="elements-sec bg-white overflow-hidden">
         <div class="container-fluid">
             <div class="tags-container relative"></div>
         </div>
     </div><!--==============================
-Video Area  
+Video Area
 ==============================-->
-    <div class="video-area2 overflow-hidden" data-bg-src="assets/img/bg/video_bg_2.jpg">
+    <div class="video-area2 overflow-hidden" data-bg-src="img/bg/video_bg_2.jpg">
         <div class="container th-container">
             <div class="video-box2">
                 <h3 class="box-title">Watch Video</h3>
@@ -1097,7 +1097,7 @@ Video Area
                 <div class="col-md-6 col-xl-4">
                     <div class="choose-item">
                         <div class="box-icon">
-                            <img src="assets/img/icon/choose_3_1.svg" alt="image">
+                            <img src="{% static 'img/icon/choose_3_1.svg' %}" alt="image">
                         </div>
                         <div class="media-body">
                             <h3 class="box-title">Convenience</h3>
@@ -1108,7 +1108,7 @@ Video Area
                 <div class="col-md-6 col-xl-4">
                     <div class="choose-item">
                         <div class="box-icon">
-                            <img src="assets/img/icon/choose_3_2.svg" alt="image">
+                            <img src="{% static 'img/icon/choose_3_2.svg' %}" alt="image">
                         </div>
                         <div class="media-body">
                             <h3 class="box-title">Value for Money</h3>
@@ -1119,7 +1119,7 @@ Video Area
                 <div class="col-md-6 col-xl-4">
                     <div class="choose-item">
                         <div class="box-icon">
-                            <img src="assets/img/icon/choose_3_3.svg" alt="image">
+                            <img src="{% static 'img/icon/choose_3_3.svg' %}" alt="image">
                         </div>
                         <div class="media-body">
                             <h3 class="box-title">Perfect for All Ages</h3>
@@ -1130,7 +1130,7 @@ Video Area
                 <div class="col-md-6 col-xl-4">
                     <div class="choose-item">
                         <div class="box-icon">
-                            <img src="assets/img/icon/choose_3_4.svg" alt="image">
+                            <img src="{% static 'img/icon/choose_3_4.svg' %}" alt="image">
                         </div>
                         <div class="media-body">
                             <h3 class="box-title">Scenic Views</h3>
@@ -1141,7 +1141,7 @@ Video Area
                 <div class="col-md-6 col-xl-4">
                     <div class="choose-item">
                         <div class="box-icon">
-                            <img src="assets/img/icon/choose_3_5.svg" alt="image">
+                            <img src="{% static 'img/icon/choose_3_5.svg' %}" alt="image">
                         </div>
                         <div class="media-body">
                             <h3 class="box-title">World-Class Dining</h3>
@@ -1152,7 +1152,7 @@ Video Area
                 <div class="col-md-6 col-xl-4">
                     <div class="choose-item">
                         <div class="box-icon">
-                            <img src="assets/img/icon/choose_3_6.svg" alt="image">
+                            <img src="{% static 'img/icon/choose_3_6.svg' %}" alt="image">
                         </div>
                         <div class="media-body">
                             <h3 class="box-title">Multiple Destinations</h3>
@@ -1164,9 +1164,9 @@ Video Area
         </div>
 
     </div><!--==============================
-Team Area  
+Team Area
 ==============================-->
-    <section class="team-area6 position-relative space overflow-hidden" data-bg-src="assets/img/bg/team_bg_3.jpg">
+    <section class="team-area6 position-relative space overflow-hidden" data-bg-src="img/bg/team_bg_3.jpg">
         <div class="container z-index-common">
             <div class="title-area text-center">
                 <span class="sub-title">Meet with Guide</span>
@@ -1179,7 +1179,7 @@ Team Area
                         <div class="swiper-slide">
                             <div class="th-team team-box2">
                                 <div class="team-img">
-                                    <img src="assets/img/team/team_4_1.jpg" alt="Team">
+                                    <img src="{% static 'img/team/team_4_1.jpg' %}" alt="Team">
                                 </div>
                                 <div class="team-content">
                                     <div class="media-body">
@@ -1200,7 +1200,7 @@ Team Area
                         <div class="swiper-slide">
                             <div class="th-team team-box2">
                                 <div class="team-img">
-                                    <img src="assets/img/team/team_4_2.jpg" alt="Team">
+                                    <img src="{% static 'img/team/team_4_2.jpg' %}" alt="Team">
                                 </div>
                                 <div class="team-content">
                                     <div class="media-body">
@@ -1221,7 +1221,7 @@ Team Area
                         <div class="swiper-slide">
                             <div class="th-team team-box2">
                                 <div class="team-img">
-                                    <img src="assets/img/team/team_4_3.jpg" alt="Team">
+                                    <img src="{% static 'img/team/team_4_3.jpg' %}" alt="Team">
                                 </div>
                                 <div class="team-content">
                                     <div class="media-body">
@@ -1242,7 +1242,7 @@ Team Area
                         <div class="swiper-slide">
                             <div class="th-team team-box2">
                                 <div class="team-img">
-                                    <img src="assets/img/team/team_4_4.jpg" alt="Team">
+                                    <img src="{% static 'img/team/team_4_4.jpg' %}" alt="Team">
                                 </div>
                                 <div class="team-content">
                                     <div class="media-body">
@@ -1263,7 +1263,7 @@ Team Area
                         <div class="swiper-slide">
                             <div class="th-team team-box2">
                                 <div class="team-img">
-                                    <img src="assets/img/team/team_4_1.jpg" alt="Team">
+                                    <img src="{% static 'img/team/team_4_1.jpg' %}" alt="Team">
                                 </div>
                                 <div class="team-content">
                                     <div class="media-body">
@@ -1284,7 +1284,7 @@ Team Area
                         <div class="swiper-slide">
                             <div class="th-team team-box2">
                                 <div class="team-img">
-                                    <img src="assets/img/team/team_4_2.jpg" alt="Team">
+                                    <img src="{% static 'img/team/team_4_2.jpg' %}" alt="Team">
                                 </div>
                                 <div class="team-content">
                                     <div class="media-body">
@@ -1305,7 +1305,7 @@ Team Area
                         <div class="swiper-slide">
                             <div class="th-team team-box2">
                                 <div class="team-img">
-                                    <img src="assets/img/team/team_4_3.jpg" alt="Team">
+                                    <img src="{% static 'img/team/team_4_3.jpg' %}" alt="Team">
                                 </div>
                                 <div class="team-content">
                                     <div class="media-body">
@@ -1326,7 +1326,7 @@ Team Area
                         <div class="swiper-slide">
                             <div class="th-team team-box2">
                                 <div class="team-img">
-                                    <img src="assets/img/team/team_4_4.jpg" alt="Team">
+                                    <img src="{% static 'img/team/team_4_4.jpg' %}" alt="Team">
                                 </div>
                                 <div class="team-content">
                                     <div class="media-body">
@@ -1347,21 +1347,21 @@ Team Area
                 </div>
             </div>
             <div class="shape-mockup movingX d-none d-xl-block" data-top="8%" data-left="-15%">
-                <img src="assets/img/shape/shape_2_1.png" alt="shape">
+                <img src="{% static 'img/shape/shape_2_1.png' %}" alt="shape">
             </div>
             <div class="shape-mockup jump d-none d-xl-block" data-top="23%" data-right="-14%">
-                <img src="assets/img/shape/shape_2_2.png" alt="shape">
+                <img src="{% static 'img/shape/shape_2_2.png' %}" alt="shape">
             </div>
             <div class="shape-mockup spin d-none d-xl-block" data-bottom="21%" data-left="-14%">
-                <img src="assets/img/shape/shape_2_3.png" alt="shape">
+                <img src="{% static 'img/shape/shape_2_3.png' %}" alt="shape">
             </div>
             <div class="shape-mockup movingX d-none d-xl-block" data-bottom="12%" data-right="-14%">
-                <img src="assets/img/shape/shape_2_4.png" alt="shape">
+                <img src="{% static 'img/shape/shape_2_4.png' %}" alt="shape">
             </div>
         </div>
 
     </section><!--==============================
-Gallery Area  
+Gallery Area
 ==============================-->
     <div class="space">
         <div class="container">
@@ -1384,9 +1384,9 @@ Gallery Area
                 <div class="col-lg-3 gallery-box_wrapp">
                     <div class="gallery-box">
                         <div class="gallery-img global-img">
-                            <a href="assets/img/gallery/gallery_13_1.jpg" class="popup-image">
+                            <a href="img/gallery/gallery_13_1.jpg" class="popup-image">
                                 <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/gallery_13_1.jpg" alt="gallery image">
+                                <img src="{% static 'img/gallery/gallery_13_1.jpg' %}" alt="gallery image">
                             </a>
                         </div>
                     </div>
@@ -1394,35 +1394,17 @@ Gallery Area
                 <div class="col-lg-3 gallery-box_wrapp">
                     <div class="gallery-box">
                         <div class="gallery-img global-img">
-                            <a href="assets/img/gallery/gallery_13_2.jpg" class="popup-image">
+                            <a href="img/gallery/gallery_13_2.jpg" class="popup-image">
                                 <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/gallery_13_2.jpg" alt="gallery image">
+                                <img src="{% static 'img/gallery/gallery_13_2.jpg' %}" alt="gallery image">
                             </a>
                         </div>
                     </div>
                     <div class="gallery-box">
                         <div class="gallery-img global-img">
-                            <a href="assets/img/gallery/gallery_13_3.jpg" class="popup-image">
+                            <a href="img/gallery/gallery_13_3.jpg" class="popup-image">
                                 <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/gallery_13_3.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 gallery-box_wrapp">
-                    <div class="gallery-box">
-                        <div class="gallery-img global-img">
-                            <a href="assets/img/gallery/gallery_13_4.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/gallery_13_4.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-box">
-                        <div class="gallery-img global-img">
-                            <a href="assets/img/gallery/gallery_13_5.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/gallery_13_5.jpg" alt="gallery image">
+                                <img src="{% static 'img/gallery/gallery_13_3.jpg' %}" alt="gallery image">
                             </a>
                         </div>
                     </div>
@@ -1430,9 +1412,27 @@ Gallery Area
                 <div class="col-lg-3 gallery-box_wrapp">
                     <div class="gallery-box">
                         <div class="gallery-img global-img">
-                            <a href="assets/img/gallery/gallery_13_6.jpg" class="popup-image">
+                            <a href="img/gallery/gallery_13_4.jpg" class="popup-image">
                                 <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/gallery_13_6.jpg" alt="gallery image">
+                                <img src="{% static 'img/gallery/gallery_13_4.jpg' %}" alt="gallery image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-box">
+                        <div class="gallery-img global-img">
+                            <a href="img/gallery/gallery_13_5.jpg" class="popup-image">
+                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
+                                <img src="{% static 'img/gallery/gallery_13_5.jpg' %}" alt="gallery image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 gallery-box_wrapp">
+                    <div class="gallery-box">
+                        <div class="gallery-img global-img">
+                            <a href="img/gallery/gallery_13_6.jpg" class="popup-image">
+                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
+                                <img src="{% static 'img/gallery/gallery_13_6.jpg' %}" alt="gallery image">
                             </a>
                         </div>
                     </div>
@@ -1440,7 +1440,7 @@ Gallery Area
             </div>
         </div>
     </div> <!--==============================
-Testimonial Area  
+Testimonial Area
 ==============================-->
     <section class="testi-area10 overflow-hidden space" id="testi-sec">
         <div class="container-fluid p-0">
@@ -1454,7 +1454,7 @@ Testimonial Area
                         <div class="swiper-slide">
                             <div class="testi-card2">
                                 <div class="box-img">
-                                    <img src="assets/img/testimonial/testi_2_1.jpg" alt="testimonial">
+                                    <img src="{% static 'img/testimonial/testi_2_1.jpg' %}" alt="testimonial">
                                 </div>
                                 <div class="box-content">
                                     <p class="box-text">“Each villa boasts spacious layouts designed for modern living. Open floor plans, large windows, and customizable interior designs allow.”</p>
@@ -1464,7 +1464,7 @@ Testimonial Area
                                             <span class="box-desig">Los Angeles</span>
                                         </div>
                                         <div class="box-quote">
-                                            <img src="assets/img/icon/testi-quote3.svg" alt="img">
+                                            <img src="{% static 'img/icon/testi-quote3.svg' %}" alt="img">
                                         </div>
                                     </div>
                                 </div>
@@ -1473,7 +1473,7 @@ Testimonial Area
                         <div class="swiper-slide">
                             <div class="testi-card2">
                                 <div class="box-img">
-                                    <img src="assets/img/testimonial/testi_2_2.jpg" alt="testimonial">
+                                    <img src="{% static 'img/testimonial/testi_2_2.jpg' %}" alt="testimonial">
                                 </div>
                                 <div class="box-content">
                                     <p class="box-text">“Cruises often offer guided excursions at each port, such as city tours, snorkeling adventures, wildlife safaris, or cultural experiences.”</p>
@@ -1483,7 +1483,7 @@ Testimonial Area
                                             <span class="box-desig">Miami</span>
                                         </div>
                                         <div class="box-quote">
-                                            <img src="assets/img/icon/testi-quote3.svg" alt="img">
+                                            <img src="{% static 'img/icon/testi-quote3.svg' %}" alt="img">
                                         </div>
                                     </div>
                                 </div>
@@ -1492,7 +1492,7 @@ Testimonial Area
                         <div class="swiper-slide">
                             <div class="testi-card2">
                                 <div class="box-img">
-                                    <img src="assets/img/testimonial/testi_2_1.jpg" alt="testimonial">
+                                    <img src="{% static 'img/testimonial/testi_2_1.jpg' %}" alt="testimonial">
                                 </div>
                                 <div class="box-content">
                                     <p class="box-text">“Cruises often provide all-inclusive packages, making them cost-effective compared to separate bookings for flights, hotels, and meals.”</p>
@@ -1502,7 +1502,7 @@ Testimonial Area
                                             <span class="box-desig">San Francisco</span>
                                         </div>
                                         <div class="box-quote">
-                                            <img src="assets/img/icon/testi-quote3.svg" alt="img">
+                                            <img src="{% static 'img/icon/testi-quote3.svg' %}" alt="img">
                                         </div>
                                     </div>
                                 </div>
@@ -1511,7 +1511,7 @@ Testimonial Area
                         <div class="swiper-slide">
                             <div class="testi-card2">
                                 <div class="box-img">
-                                    <img src="assets/img/testimonial/testi_2_2.jpg" alt="testimonial">
+                                    <img src="{% static 'img/testimonial/testi_2_2.jpg' %}" alt="testimonial">
                                 </div>
                                 <div class="box-content">
                                     <p class="box-text">“Each villa boasts spacious layouts designed for modern living. Open floor plans, large windows, and customizable interior designs allow.”</p>
@@ -1521,7 +1521,7 @@ Testimonial Area
                                             <span class="box-desig">Los Angeles</span>
                                         </div>
                                         <div class="box-quote">
-                                            <img src="assets/img/icon/testi-quote3.svg" alt="img">
+                                            <img src="{% static 'img/icon/testi-quote3.svg' %}" alt="img">
                                         </div>
                                     </div>
                                 </div>
@@ -1530,7 +1530,7 @@ Testimonial Area
                         <div class="swiper-slide">
                             <div class="testi-card2">
                                 <div class="box-img">
-                                    <img src="assets/img/testimonial/testi_2_1.jpg" alt="testimonial">
+                                    <img src="{% static 'img/testimonial/testi_2_1.jpg' %}" alt="testimonial">
                                 </div>
                                 <div class="box-content">
                                     <p class="box-text">“Cruises often offer guided excursions at each port, such as city tours, snorkeling adventures, wildlife safaris, or cultural experiences.”</p>
@@ -1540,7 +1540,7 @@ Testimonial Area
                                             <span class="box-desig">Miami</span>
                                         </div>
                                         <div class="box-quote">
-                                            <img src="assets/img/icon/testi-quote3.svg" alt="img">
+                                            <img src="{% static 'img/icon/testi-quote3.svg' %}" alt="img">
                                         </div>
                                     </div>
                                 </div>
@@ -1549,7 +1549,7 @@ Testimonial Area
                         <div class="swiper-slide">
                             <div class="testi-card2">
                                 <div class="box-img">
-                                    <img src="assets/img/testimonial/testi_2_1.jpg" alt="testimonial">
+                                    <img src="{% static 'img/testimonial/testi_2_1.jpg' %}" alt="testimonial">
                                 </div>
                                 <div class="box-content">
                                     <p class="box-text">“Cruises often provide all-inclusive packages, making them cost-effective compared to separate bookings for flights, hotels, and meals.”</p>
@@ -1559,7 +1559,7 @@ Testimonial Area
                                             <span class="box-desig">San Francisco</span>
                                         </div>
                                         <div class="box-quote">
-                                            <img src="assets/img/icon/testi-quote3.svg" alt="img">
+                                            <img src="{% static 'img/icon/testi-quote3.svg' %}" alt="img">
                                         </div>
                                     </div>
                                 </div>
@@ -1568,7 +1568,7 @@ Testimonial Area
                         <div class="swiper-slide">
                             <div class="testi-card2">
                                 <div class="box-img">
-                                    <img src="assets/img/testimonial/testi_2_2.jpg" alt="testimonial">
+                                    <img src="{% static 'img/testimonial/testi_2_2.jpg' %}" alt="testimonial">
                                 </div>
                                 <div class="box-content">
                                     <p class="box-text">“Each villa boasts spacious layouts designed for modern living. Open floor plans, large windows, and customizable interior designs allow.”</p>
@@ -1578,7 +1578,7 @@ Testimonial Area
                                             <span class="box-desig">Los Angeles</span>
                                         </div>
                                         <div class="box-quote">
-                                            <img src="assets/img/icon/testi-quote3.svg" alt="img">
+                                            <img src="{% static 'img/icon/testi-quote3.svg' %}" alt="img">
                                         </div>
                                     </div>
                                 </div>
@@ -1587,7 +1587,7 @@ Testimonial Area
                         <div class="swiper-slide">
                             <div class="testi-card2">
                                 <div class="box-img">
-                                    <img src="assets/img/testimonial/testi_2_1.jpg" alt="testimonial">
+                                    <img src="{% static 'img/testimonial/testi_2_1.jpg' %}" alt="testimonial">
                                 </div>
                                 <div class="box-content">
                                     <p class="box-text">“Cruises often offer guided excursions at each port, such as city tours, snorkeling adventures, wildlife safaris, or cultural experiences.”</p>
@@ -1597,7 +1597,7 @@ Testimonial Area
                                             <span class="box-desig">Miami</span>
                                         </div>
                                         <div class="box-quote">
-                                            <img src="assets/img/icon/testi-quote3.svg" alt="img">
+                                            <img src="{% static 'img/icon/testi-quote3.svg' %}" alt="img">
                                         </div>
                                     </div>
                                 </div>
@@ -1609,7 +1609,7 @@ Testimonial Area
             </div>
         </div>
     </section><!--==============================
-Blog Area  
+Blog Area
 ==============================-->
     <section class="overflow-hidden space-top overflow-hidden" id="blog-sec">
         <div class="container">
@@ -1633,7 +1633,7 @@ Blog Area
 
                             <div class="blog-box style3 th-ani">
                                 <div class="blog-img">
-                                    <img src="assets/img/blog/blog_11_1.jpg" alt="blog image">
+                                    <img src="{% static 'img/blog/blog_11_1.jpg' %}" alt="blog image">
                                 </div>
                                 <div class="blog-box_content">
                                     <div class="blog-meta">
@@ -1650,7 +1650,7 @@ Blog Area
 
                             <div class="blog-box style3 th-ani">
                                 <div class="blog-img">
-                                    <img src="assets/img/blog/blog_11_2.jpg" alt="blog image">
+                                    <img src="{% static 'img/blog/blog_11_2.jpg' %}" alt="blog image">
                                 </div>
                                 <div class="blog-box_content">
                                     <div class="blog-meta">
@@ -1667,7 +1667,7 @@ Blog Area
 
                             <div class="blog-box style3 th-ani">
                                 <div class="blog-img">
-                                    <img src="assets/img/blog/blog_11_3.jpg" alt="blog image">
+                                    <img src="{% static 'img/blog/blog_11_3.jpg' %}" alt="blog image">
                                 </div>
                                 <div class="blog-box_content">
                                     <div class="blog-meta">
@@ -1684,7 +1684,7 @@ Blog Area
 
                             <div class="blog-box style3 th-ani">
                                 <div class="blog-img">
-                                    <img src="assets/img/blog/blog_11_2.jpg" alt="blog image">
+                                    <img src="{% static 'img/blog/blog_11_2.jpg' %}" alt="blog image">
                                 </div>
                                 <div class="blog-box_content">
                                     <div class="blog-meta">
@@ -1701,18 +1701,18 @@ Blog Area
                 </div>
             </div>
             <div class="shape-mockup shape1 d-none d-xxl-block" data-bottom="20%" data-left="-17%">
-                <img src="assets/img/shape/shape_1.png" alt="shape">
+                <img src="{% static 'img/shape/shape_1.png' %}" alt="shape">
             </div>
             <div class="shape-mockup shape2 d-none d-xl-block" data-bottom="5%" data-left="-17%">
-                <img src="assets/img/shape/shape_2.png" alt="shape">
+                <img src="{% static 'img/shape/shape_2.png' %}" alt="shape">
             </div>
             <div class="shape-mockup shape3 d-none d-xxl-block" data-bottom="12%" data-left="-10%">
-                <img src="assets/img/shape/shape_3.png" alt="shape">
+                <img src="{% static 'img/shape/shape_3.png' %}" alt="shape">
             </div>
         </div>
 
     </section><!--==============================
-Brand Area  
+Brand Area
 ==============================-->
     <div class="brand-area overflow-hidden space">
         <div class="container th-container">
@@ -1722,96 +1722,96 @@ Brand Area
                     <div class="swiper-slide">
                         <div class="brand-box">
                             <a href="">
-                                <img class="original" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
-                                <img class="gray" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
+                                <img class="original" src="{% static 'img/brand/brand_1_1.svg' %}" alt="Brand Logo">
+                                <img class="gray" src="{% static 'img/brand/brand_1_1.svg' %}" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box">
                             <a href="">
-                                <img class="original" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
-                                <img class="gray" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
+                                <img class="original" src="{% static 'img/brand/brand_1_2.svg' %}" alt="Brand Logo">
+                                <img class="gray" src="{% static 'img/brand/brand_1_2.svg' %}" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box">
                             <a href="">
-                                <img class="original" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
-                                <img class="gray" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
+                                <img class="original" src="{% static 'img/brand/brand_1_3.svg' %}" alt="Brand Logo">
+                                <img class="gray" src="{% static 'img/brand/brand_1_3.svg' %}" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box">
                             <a href="">
-                                <img class="original" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                <img class="gray" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
+                                <img class="original" src="{% static 'img/brand/brand_1_4.svg' %}" alt="Brand Logo">
+                                <img class="gray" src="{% static 'img/brand/brand_1_4.svg' %}" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box">
                             <a href="">
-                                <img class="original" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                <img class="gray" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
+                                <img class="original" src="{% static 'img/brand/brand_1_5.svg' %}" alt="Brand Logo">
+                                <img class="gray" src="{% static 'img/brand/brand_1_5.svg' %}" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box">
                             <a href="">
-                                <img class="original" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
-                                <img class="gray" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
+                                <img class="original" src="{% static 'img/brand/brand_1_6.svg' %}" alt="Brand Logo">
+                                <img class="gray" src="{% static 'img/brand/brand_1_6.svg' %}" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box">
                             <a href="">
-                                <img class="original" src="assets/img/brand/brand_1_7.svg" alt="Brand Logo">
-                                <img class="gray" src="assets/img/brand/brand_1_7.svg" alt="Brand Logo">
+                                <img class="original" src="{% static 'img/brand/brand_1_7.svg' %}" alt="Brand Logo">
+                                <img class="gray" src="{% static 'img/brand/brand_1_7.svg' %}" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box">
                             <a href="">
-                                <img class="original" src="assets/img/brand/brand_1_8.svg" alt="Brand Logo">
-                                <img class="gray" src="assets/img/brand/brand_1_8.svg" alt="Brand Logo">
+                                <img class="original" src="{% static 'img/brand/brand_1_8.svg' %}" alt="Brand Logo">
+                                <img class="gray" src="{% static 'img/brand/brand_1_8.svg' %}" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box">
                             <a href="">
-                                <img class="original" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                <img class="gray" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
+                                <img class="original" src="{% static 'img/brand/brand_1_4.svg' %}" alt="Brand Logo">
+                                <img class="gray" src="{% static 'img/brand/brand_1_4.svg' %}" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box">
                             <a href="">
-                                <img class="original" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
-                                <img class="gray" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
+                                <img class="original" src="{% static 'img/brand/brand_1_3.svg' %}" alt="Brand Logo">
+                                <img class="gray" src="{% static 'img/brand/brand_1_3.svg' %}" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box">
                             <a href="">
-                                <img class="original" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
-                                <img class="gray" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
+                                <img class="original" src="{% static 'img/brand/brand_1_2.svg' %}" alt="Brand Logo">
+                                <img class="gray" src="{% static 'img/brand/brand_1_2.svg' %}" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box">
                             <a href="">
-                                <img class="original" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
-                                <img class="gray" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
+                                <img class="original" src="{% static 'img/brand/brand_1_1.svg' %}" alt="Brand Logo">
+                                <img class="gray" src="{% static 'img/brand/brand_1_1.svg' %}" alt="Brand Logo">
                             </a>
                         </div>
                     </div>
@@ -1836,7 +1836,7 @@ Brand Area
                             <div class="col-lg-7">
                                 <form class="newsletter-form style2">
                                     <input class="form-control " type="email" placeholder="Enter Email" required="">
-                                    <button type="submit" class="th-btn style1">Subscribe Now <img src="assets/img/icon/plane2.svg" alt=""></button>
+                                    <button type="submit" class="th-btn style1">Subscribe Now <img src="{% static 'img/icon/plane2.svg' %}" alt=""></button>
                                 </form>
                             </div>
                         </div>
@@ -1847,7 +1847,7 @@ Brand Area
                         <div class="widget footer-widget">
                             <div class="th-widget-about">
                                 <div class="about-logo">
-                                    <a href="home-travel.html"><img src="assets/img/logo-white.svg" alt="Tourm"></a>
+                                    <a href="home-travel.html"><img src="{% static 'img/logo-white.svg' %}" alt="Tourm"></a>
                                 </div>
                                 <p class="about-text">Rapidiously myocardinate cross-platform intellectual capital model. Appropriately create interactive infrastructures</p>
                                 <div class="th-social">
@@ -1881,7 +1881,7 @@ Brand Area
                             <div class="th-widget-contact">
                                 <div class="info-box_text">
                                     <div class="icon">
-                                        <img src="assets/img/icon/phone.svg" alt="img">
+                                        <img src="{% static 'img/icon/phone.svg' %}" alt="img">
                                     </div>
                                     <div class="details">
                                         <p><a href="tel:+01234567890" class="info-box_link">+01 234 567 890</a></p>
@@ -1890,7 +1890,7 @@ Brand Area
                                 </div>
                                 <div class="info-box_text">
                                     <div class="icon">
-                                        <img src="assets/img/icon/envelope.svg" alt="img">
+                                        <img src="{% static 'img/icon/envelope.svg' %}" alt="img">
                                     </div>
                                     <div class="details">
                                         <p><a href="mailto:mailinfo00@tourm.com" class="info-box_link">mailinfo00@tourm.com</a></p>
@@ -1898,7 +1898,7 @@ Brand Area
                                     </div>
                                 </div>
                                 <div class="info-box_text">
-                                    <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="img"></div>
+                                    <div class="icon"><img src="{% static 'img/icon/location-dot.svg' %}" alt="img"></div>
                                     <div class="details">
                                         <p>789 Inner Lane, Holy park, California, USA</p>
                                     </div>
@@ -1911,27 +1911,27 @@ Brand Area
                             <h3 class="widget_title">Instagram Post</h3>
                             <div class="sidebar-gallery">
                                 <div class="gallery-thumb">
-                                    <img src="assets/img/widget/gallery_1_1.jpg" alt="Gallery Image">
+                                    <img src="{% static 'img/widget/gallery_1_1.jpg' %}" alt="Gallery Image">
                                     <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="assets/img/widget/gallery_1_2.jpg" alt="Gallery Image">
+                                    <img src="{% static 'img/widget/gallery_1_2.jpg' %}" alt="Gallery Image">
                                     <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="assets/img/widget/gallery_1_3.jpg" alt="Gallery Image">
+                                    <img src="{% static 'img/widget/gallery_1_3.jpg' %}" alt="Gallery Image">
                                     <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="assets/img/widget/gallery_1_4.jpg" alt="Gallery Image">
+                                    <img src="{% static 'img/widget/gallery_1_4.jpg' %}" alt="Gallery Image">
                                     <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="assets/img/widget/gallery_1_5.jpg" alt="Gallery Image">
+                                    <img src="{% static 'img/widget/gallery_1_5.jpg' %}" alt="Gallery Image">
                                     <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <img src="assets/img/widget/gallery_1_6.jpg" alt="Gallery Image">
+                                    <img src="{% static 'img/widget/gallery_1_6.jpg' %}" alt="Gallery Image">
                                     <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
@@ -1949,7 +1949,7 @@ Brand Area
                     <div class="col-md-6 text-end d-none d-md-block">
                         <div class="footer-card">
                             <span class="title">We Accept</span>
-                            <img src="assets/img/shape/cards.png" alt="">
+                            <img src="{% static 'img/shape/cards.png' %}" alt="">
                         </div>
                     </div>
                 </div>
@@ -1957,12 +1957,12 @@ Brand Area
             </div>
         </div>
         <div class="shape-mockup movingX d-none d-xxl-block" data-top="24%" data-left="5%">
-            <img src="assets/img/shape/shape_8.png" alt="shape">
+            <img src="{% static 'img/shape/shape_8.png' %}" alt="shape">
         </div>
     </footer>
 
     <!--********************************
-			Code End  Here 
+			Code End  Here
 	******************************** -->
 
     <!-- Scroll To Top -->
@@ -1973,7 +1973,7 @@ Brand Area
         </svg>
     </div>
     <!--==============================
-modal Area  
+modal Area
 ==============================-->
     <div id="login-form" class="popup-login-register mfp-hide">
         <ul class="nav" id="pills-tab" role="tablist">
@@ -2053,36 +2053,36 @@ modal Area
 ============================== -->
     <!-- Jquery -->
     <!-- Jquery -->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'js/vendor/jquery-3.6.0.min.js' %}"></script>
     <!-- Swiper Js -->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <!-- Magnific Popup -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
     <!-- Counter Up -->
-    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
     <!-- Range Slider -->
-    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
     <!-- imagesloaded -->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
     <!-- isotope -->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
     <!-- gsap -->
-    <script src="assets/js/gsap.min.js"></script>
+    <script src="{% static 'js/gsap.min.js' %}"></script>
 
     <!-- circle-progress -->
-    <script src="assets/js/circle-progress.js"></script>
+    <script src="{% static 'js/circle-progress.js' %}"></script>
 
-    <script src="assets/js/matter.min.js"></script>
-    <script src="assets/js/matterjs-custom.js"></script>
+    <script src="{% static 'js/matter.min.js' %}"></script>
+    <script src="{% static 'js/matterjs-custom.js' %}"></script>
 
 
     <!-- nice select -->
-    <script src="assets/js/nice-select.min.js"></script>
+    <script src="{% static 'js/nice-select.min.js' %}"></script>
 
     <!-- Main Js File -->
-    <script src="assets/js/main.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 
 </html>
