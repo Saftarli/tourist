@@ -27,33 +27,33 @@ tour Area
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img">
-                                            <img src="{% static 'img/tour/tour_inner_1.jpg' %}" alt="img">
+                                            <img src="{{ tour.image1.url }}" alt="img">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img">
-                                            <img src="{% static 'img/tour/tour_inner_2.jpg' %}" alt="img">
+                                            <img src="{{ tour.image2.url }}" alt="img">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img">
-                                            <img src="{% static 'img/tour/tour_inner_3.jpg' %}" alt="img">
+                                            <img src="{{ tour.image3.url }}" alt="img">
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img">
-                                            <img src="{% static 'img/tour/tour_inner_1.jpg' %}" alt="img">
+                                            <img src="{{ tour.image1.url }}" alt="img">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img">
-                                            <img src="{% static 'img/tour/tour_inner_2.jpg' %}" alt="img">
+                                            <img src="{{ tour.image2.url }}" alt="img">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img">
-                                            <img src="{% static 'img/tour/tour_inner_3.jpg' %}" alt="img">
+                                            <img src="{{ tour.image3.url }}" alt="img">
                                         </div>
                                     </div>
                                 </div>
@@ -62,32 +62,32 @@ tour Area
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img">
-                                            <img src="{% static 'img/tour/tour_inner_1.jpg' %}" alt="Image">
+                                            <img src="{{ tour.image1.url }}" alt="Image">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img">
-                                            <img src="{% static 'img/tour/tour_inner_2.jpg' %}" alt="Image">
+                                            <img src="{{ tour.image2.url }}" alt="Image">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img">
-                                            <img src="{% static 'img/tour/tour_inner_3.jpg' %}" alt="Image">
+                                            <img src="{{ tour.image3.url }}" alt="Image">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img">
-                                            <img src="{% static 'img/tour/tour_inner_1.jpg' %}" alt="Image">
+                                            <img src="{{ tour.image1.url }}" alt="Image">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img">
-                                            <img src="{% static 'img/tour/tour_inner_2.jpg' %}" alt="Image">
+                                            <img src="{{ tour.image2.url }}" alt="Image">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="tour-slider-img">
-                                            <img src="{% static 'img/tour/tour_inner_3.jpg' %}" alt="Image">
+                                            <img src="{{ tour.image3.url }}" alt="Image">
                                         </div>
                                     </div>
                                 </div>
@@ -99,32 +99,10 @@ tour Area
                         <div class="page-content">
                             <div class="page-meta mb-45">
                             </div>
-                            <h2 class="box-title">Explore the Beauty of Maldives and enjoy</h2>
-                            <p class="box-text mb-30">voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                                modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Quis autem vel
-                                eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
-                                illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
-                            <p class="box-text mb-50"> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                                suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
-                                reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
-                                dolorem eum fugiat quo voluptas nulla pariatur</p>
-                            <h2 class="box-title">Highlights</h2>
-                            <p class="box-text mb-30">voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                Dolorem ipsum quia dolor sit amet, consectetur, adipisci.</p>
-                            <div class="checklist mb-50">
-                                <ul>
-                                    <li>Visit most popular location of Maldives</li>
-                                    <li>Buffet Breakfast for all traveler with good quality.</li>
-                                    <li>Expert guide always guide you and give informations.</li>
-                                    <li>Best Hotel for all also great food.</li>
-                                    <li>Helping all traveler for Money Exchange.</li>
-                                    <li>Buffet Breakfast for all traveler with good quality..</li>
-                                    <li>Buffet Breakfast for all traveler with good quality.</li>
-                                </ul>
-                            </div>
+                            <h2 class="box-title">{{ tour.title }}</h2>
+                            <p class="box-text mb-30">{{ tour.content }}</p>
+                            <h2 class="box-title">{{ tour.subtitle }}</h2>
+                            <p class="box-text mb-30">{{ tour.subcontent|safe }}</p>
 
                         </div>
 
