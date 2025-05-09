@@ -34,6 +34,11 @@ class SiteSettings(models.Model):
     phone_number = models.CharField(max_length=255, null=True, blank=True,
                                     help_text='Enter phone number starting with the code')
 
+    phone_number1 = models.CharField(max_length=255, null=True, blank=True,
+                                    help_text='Enter phone number starting with the code')
+    phone_number2 = models.CharField(max_length=255, null=True, blank=True,
+                                    help_text='Enter phone number starting with the code')
+
     fax = models.CharField(max_length=255, null=True, blank=True,
                                     help_text='Enter fax number starting with the code')
 

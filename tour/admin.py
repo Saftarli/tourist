@@ -4,10 +4,10 @@ from django.utils.text import slugify
 from services.models import Service
 from tour.models import Tour, TourIndex
 # Register your models here.
-class ServicesIndexAdmin(admin.ModelAdmin):
+class TourIndexAdmin(admin.ModelAdmin):
     def save_model(self, request, obj, form, change):
         obj.slug = slugify(obj.cover_title)
         super().save_model(request, obj, form, change)
 
 admin.site.register(Tour)
-admin.site.register(TourIndex, ServicesIndexAdmin)
+admin.site.register(TourIndex, TourIndexAdmin)
