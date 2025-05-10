@@ -22,7 +22,7 @@ class Service(SeoMixin, models.Model):
     gallery_image4 = models.ImageField(upload_to='services/gallery/', null=True, blank=True, help_text='312x215 ölçüdə olacaq şəkil')
 
     def __str__(self):
-        return self.cover_title
+        return '{}'.format(self.cover_title)
     class Meta:
         verbose_name_plural = 'Xidmətlər'
 
